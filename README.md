@@ -18,7 +18,7 @@ The user should clone the repository from GitHub and open up the project in the 
 [GitHub Pages](https://lisahuele.github.io/work-day-schedule/)
 
 
-![Image of Work Day Schedule](./assets/05-third-party-apis-homework-demo)
+![Image of Work Day Schedule](./assets/05-third-party-apis-homework-demo.gif)
 
 ## Built With
 - HTML
