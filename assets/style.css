@@ -4,13 +4,21 @@ body {
   line-height: 1;
 }
 
-textarea{
+h1, #currentDay {
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#currentDay {
+  font-size: 2em;
+}
+
+textarea {
   background: transparent;
-  border: none;
   resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
+  font-size: 1.5em;
+  
 }
 
 .jumbotron {
@@ -18,28 +26,24 @@ textarea{
   background-color: transparent;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 2px solid #333;
 }
 
-.description{
+.description, .row {
   white-space: pre-wrap;
+  height: 80px;
 }
 
 .time-block{
   text-align: center;
   border-radius: 15px;
-}
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
+  padding-bottom: 10px;
 }
 
 .hour {
   background-color: #ffffff;
+  font-weight: bold;
   color: #000000;
-  border-top: 1px dashed #000000;
 }
 
 .past {
