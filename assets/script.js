@@ -1,7 +1,17 @@
 
 window.onload = function () {
     colourCode();
+    nineAM();
+    tenAM();
+    elevenAM();
+    twelvePM();
+    onePM();
+    twoPM();
+    threePM();
+    fourPM();
+    fivePM();
 }
+
 // when user opens the planner
 // then the current day & time is displayed at the top of the calendar
 var currentDay = moment().format("dddd LL");
@@ -94,6 +104,147 @@ function colourCode() {
 // then the text for that event is saved in local storage
 // when user refreshes the page, the saved events remain
 
+function nineAM() {
+    var inputNineEl = document.getElementById("9am-text");
+    var outputNineEl = document.getElementById("9am-text");
+    var buttonNineEl = document.getElementById("9am-button");
 
+    buttonNineEl.addEventListener("click", updateOutputNine);
 
+    outputNineEl.textContent = localStorage.getItem("content9AM");
+    inputNineEl.value = localStorage.getItem("content9AM");
+
+    function updateOutputNine() {
+        localStorage.setItem("content9AM", inputNineEl.value);
+        outputNineEl.textContent = inputNineEl.value;
+    }
+};
+
+function tenAM() {
+    var inputTenEl = document.getElementById("10am-text");
+    var outputTenEl = document.getElementById("10am-text");
+    var buttonTenEl = document.getElementById("10am-button");
+
+    buttonTenEl.addEventListener("click", updateOutputTen);
+
+    outputTenEl.textContent = localStorage.getItem("content10AM");
+    inputTenEl.value = localStorage.getItem("content10AM");
+
+    function updateOutputTen() {
+        localStorage.setItem("content10AM", inputTenEl.value);
+        outputTenEl.textContent = inputTenEl.value;
+    }
+};
+
+function elevenAM() {
+    var inputElevenEl = document.getElementById("11am-text");
+    var outputElevenEl = document.getElementById("11am-text");
+    var buttonElevenEl = document.getElementById("11am-button");
+
+    buttonElevenEl.addEventListener("click", updateOutputEleven);
+
+    outputElevenEl.textContent = localStorage.getItem("content11AM");
+    inputElevenEl.value = localStorage.getItem("content11AM");
+
+    function updateOutputEleven() {
+        localStorage.setItem("content11AM", inputElevenEl.value);
+        outputElevenEl.textContent = inputElevenEl.value;
+    }
+};
+
+function twelvePM() {
+    var inputTwelveEl = document.getElementById("12pm-text");
+    var outputTwelveEl = document.getElementById("12pm-text");
+    var buttonTwelveEl = document.getElementById("12pm-button");
+
+    buttonTwelveEl.addEventListener("click", updateOutputTwelve);
+
+    outputTwelveEl.textContent = localStorage.getItem("content12PM");
+    inputTwelveEl.value = localStorage.getItem("content12PM");
+
+    function updateOutputTwelve() {
+        localStorage.setItem("content12PM", inputTwelveEl.value);
+        outputTwelveEl.textContent = inputTwelveEl.value;
+    }
+};
+
+function onePM() {
+    var inputOneEl = document.getElementById("1pm-text");
+    var outputOneEl = document.getElementById("1pm-text");
+    var buttonOneEl = document.getElementById("1pm-button");
+
+    buttonOneEl.addEventListener("click", updateOutputOne);
+
+    outputOneEl.textContent = localStorage.getItem("content1PM");
+    inputOneEl.value = localStorage.getItem("content1PM");
+
+    function updateOutputOne() {
+        localStorage.setItem("content1PM", inputOneEl.value);
+        outputOneEl.textContent = inputOneEl.value;
+    }
+};
+
+function twoPM() {
+    var inputTwoEl = document.getElementById("2pm-text");
+    var outputTwoEl = document.getElementById("2pm-text");
+    var buttonTwoEl = document.getElementById("2pm-button");
+
+    buttonTwoEl.addEventListener("click", updateOutputTwo);
+
+    outputTwoEl.textContent = localStorage.getItem("content2PM");
+    inputTwoEl.value = localStorage.getItem("content2PM");
+
+    function updateOutputTwo() {
+        localStorage.setItem("content2PM", inputTwoEl.value);
+        outputTwoEl.textContent = inputTwoEl.value;
+    }
+};
+
+function threePM() {
+    var inputThreeEl = document.getElementById("3pm-text");
+    var outputThreeEl = document.getElementById("3pm-text");
+    var buttonThreeEl = document.getElementById("3pm-button");
+
+    buttonThreeEl.addEventListener("click", updateOutputThree);
+
+    outputThreeEl.textContent = localStorage.getItem("content3PM");
+    inputThreeEl.value = localStorage.getItem("content3PM");
+
+    function updateOutputThree() {
+        localStorage.setItem("content3PM", inputThreeEl.value);
+        outputThreeEl.textContent = inputThreeEl.value;
+    }
+};
+
+function fourPM() {
+    var inputFourEl = document.getElementById("4pm-text");
+    var outputFourEl = document.getElementById("4pm-text");
+    var buttonFourEl = document.getElementById("4pm-button");
+
+    buttonFourEl.addEventListener("click", updateOutputFour);
+
+    outputFourEl.textContent = localStorage.getItem("content4PM");
+    inputFourEl.value = localStorage.getItem("content4PM");
+
+    function updateOutputFour() {
+        localStorage.setItem("content4PM", inputFourEl.value);
+        outputFourEl.textContent = inputFourEl.value;
+    }
+};
+
+function fivePM() {
+    var inputFiveEl = document.getElementById("5pm-text");
+    var outputFiveEl = document.getElementById("5pm-text");
+    var buttonFiveEl = document.getElementById("5pm-button");
+
+    buttonFiveEl.addEventListener("click", updateOutputFive);
+
+    outputFiveEl.textContent = localStorage.getItem("content5PM");
+    inputFiveEl.value = localStorage.getItem("content5PM");
+
+    function updateOutputFive() {
+        localStorage.setItem("content5PM", inputFiveEl.value);
+        outputFiveEl.textContent = inputFiveEl.value;
+    }
+};
 
